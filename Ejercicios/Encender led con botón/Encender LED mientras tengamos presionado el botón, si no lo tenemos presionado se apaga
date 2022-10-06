@@ -1,0 +1,18 @@
+int estado= 0; //para declarar la variable, estado= 0 significa que está apagado, y si lo presionamos el estado va a cambiar a estar en uno o en algo, esto es para decirle que tipo de variable es, en este caso es una variable de números enteros 
+
+void setup() {
+  pinMode(8, INPUT); //declaramos el botón como entrada
+  pinMode(4, OUTPUT); //declaramos el LED como salida
+}
+
+void loop() {
+   estado=digitalRead(8); //leer el estado del botón
+
+   if(estado == HIGH)(    //si estado está en alto
+    digitalWrite(4, HIGH);//encendemos el LED
+   }
+   
+   else {                //si no apagamos el LED
+     digitalWrite(4, LOW);
+   }
+}
